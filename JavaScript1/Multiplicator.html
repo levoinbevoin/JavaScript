@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script>
+        function BiggerNumber(){
+          var n1 = document.getElementById("Number1").value;
+          var n2 = document.getElementById("Number2").value;
+            if (n1>n2){
+              document.write(n1 + " is bigger than " + n2)
+            } else {
+              document.write(n2 + " is bigger than " + n1)
+            }
+        }
+      </script>
+    </head>
+    <body>
+      <h1>Which Number is Bigger
+      <input type="number" id="Number1">
+      <input type="number" id="Number2">
+      <button onclick="BiggerNumber()">Enter</button>
+    </body>
+  </html>
