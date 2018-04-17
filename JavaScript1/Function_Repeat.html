@@ -2,18 +2,19 @@
 <html>
     <head>
         <script>
-          function repeat(times, text){
-            var result = "";
-            for (var i=0; i<times;i++){
-              result += text+"<br/>";
-            }
-            return result
+          function repeat(string, times){
+              var i;
+              var result = "";
+              for (i=0; i<times; i++){
+              result += string + "<br/>";
+              }
+            return result;
           }
         </script>
     </head>
     <body>
       <script>
-        document.write(repeat(100"I will not disturb in class!"))
+        document.write(repeat("I will not disturb in class!", 100))
       </script>
     </body>
-  </html>
+</html>

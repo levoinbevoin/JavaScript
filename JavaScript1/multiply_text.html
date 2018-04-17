@@ -2,11 +2,12 @@
 <html>
   <head>
     <script>
-      function repeatMe(){
-            // Gets the value of the text field:
-          var val = document.getElementById('inputField').value;
-            // Writes the comment in the div with id "result":
-          document.getElementById('result').innerHTML = val;
+      function MultiplyText(times, text){
+          var text = document.getElementById('inputField').value;
+            for (var i=0 i<times;i++)
+            result += text+"<br/>";
+          }
+          return result
           }
     </script>
   </head>
@@ -14,11 +15,11 @@
   <body>
     <h1>Multiply Text By 10</h1>
     <p> Enter the value into the field that you want multiplied.</p>
-      <input type="text" id="inputField">
-      <button onclick="repeatMe()">Multiply</button>
+        <input type="text" id="inputField">
+        <button onclick="repeatMe()">Multiply</button>
     <br><br>
-      <script>
-        <div id="result"> </div>
-      </script>
+    <script>
+      document.write(MultiplyText(10"result"))
+    </script>
   </body>
 </html>
