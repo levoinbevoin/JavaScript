@@ -2,12 +2,13 @@
 <html>
   <head>
     <script>
-      function MultiplyText(times, text){
-          var text = document.getElementById('inputField').value;
-            for (var i=0 i<times;i++)
-            result += text+"<br/>";
+      function MultiplyText(times){
+          var string = document.getElementById('inputField').value;
+          var result = "";
+            for (var i=0; i<times; i++){
+            result += string+"<br/>";
           }
-          return result
+          document.write(result);
           }
     </script>
   </head>
@@ -16,10 +17,10 @@
     <h1>Multiply Text By 10</h1>
     <p> Enter the value into the field that you want multiplied.</p>
         <input type="text" id="inputField">
-        <button onclick="repeatMe()">Multiply</button>
+        <button onclick="MultiplyText(10)">Multiply</button>
     <br><br>
-    <script>
-      document.write(MultiplyText(10"result"))
-    </script>
+    <p1>Output:</p1>
+    <br>
+
   </body>
 </html>
