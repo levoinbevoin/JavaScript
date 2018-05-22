@@ -2,21 +2,21 @@
 <html>
     <head>
       <script>
-        function BiggerNumber(){
+        function Multiply(){
           var n1 = document.getElementById("Number1").value;
           var n2 = document.getElementById("Number2").value;
-            if (n1>n2){
-              document.write(n1 + " is bigger than " + n2)
-            } else {
-              document.write(n2 + " is bigger than " + n1)
+          var result = "";
+              result = n1*n2;
             }
+          document.write(" The product of the two numbers is: " + result)
         }
       </script>
     </head>
     <body>
-      <h1>Which Number is Bigger
+      <h1>What is the product of the numbers
+        <br><br>
       <input type="number" id="Number1">
       <input type="number" id="Number2">
-      <button onclick="BiggerNumber()">Enter</button>
+      <button onclick="Mulitiply()">Multiply</button>
     </body>
   </html>

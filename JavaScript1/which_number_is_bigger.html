@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-  <html>
+<html>
     <head>
-        <title>Write a JavaScript program that accept two integers and display the larger</title>
-    </head>
-
-    <body>
       <script>
-        var num1, num2;
-        num1 = window.prompt("Input the First integer", "0");
-        num2 = window.prompt("Input the second integer", "0");
-
-          if(parseInt(num1, 10) > parseInt(num2, 10))
-          {
-          console.log("The larger of "+ num1+ " and "+ num2+ " is "+ num1+ ".");
-          }
-          else
-          if(parseInt(num2, 10) > parseInt(num1, 10))
-          {
-          console.log("The larger of "+ num1+" and "+ num2+ " is "+ num2+ ".");
-          }
-          else
-          {
-          console.log("The values "+ num1+ " and "+num2+ " are equal.");
-          }
+        function BiggerNumber(){
+          var n1 = document.getElementById("Number1").value;
+          var n2 = document.getElementById("Number2").value;
+            if (n1>n2){
+              document.write(n1 + " is bigger than " + n2)
+            } else {
+              document.write(n2 + " is bigger than " + n1)
+            }
+        }
       </script>
+    </head>
+    <body>
+      <h1>Which Number is Bigger
+      <input type="number" id="Number1">
+      <input type="number" id="Number2">
+      <button onclick="BiggerNumber()">Enter</button>
     </body>
   </html>
